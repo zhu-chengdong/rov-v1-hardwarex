@@ -1,0 +1,105 @@
+%YAML:1.0
+
+#--------------------------------------------------------------------------------------------
+# System config
+#--------------------------------------------------------------------------------------------
+
+File.version: "1.0"
+
+Camera.type: "PinHole"
+
+#--------------------------------------------------------------------------------------------
+# Camera Parameters
+# Rectified stereo images
+#--------------------------------------------------------------------------------------------
+
+# Left camera
+Camera1.fx: 1347.52248
+Camera1.fy: 1347.52248
+Camera1.cx: 493.020039
+Camera1.cy: 549.608562
+
+Camera1.k1: 0.0
+Camera1.k2: 0.0
+Camera1.k3: 0.0
+Camera1.p1: 0.0
+Camera1.p2: 0.0
+
+
+# Right camera
+Camera2.fx: 1347.52248
+Camera2.fy: 1347.52248
+Camera2.cx: 493.020039
+Camera2.cy: 549.608562
+
+Camera2.k1: 0.0
+Camera2.k2: 0.0
+Camera2.k3: 0.0
+Camera2.p1: 0.0
+Camera2.p2: 0.0
+
+Camera.width: 1280
+Camera.height: 800
+
+Camera.fps: 20
+Camera.RGB: 0
+
+Stereo.ThDepth: 60.0
+
+# Stereo baseline in meters
+Stereo.b: 0.10095282
+
+# Images are already rectified
+ONLINE_RECTIFICATION: false
+
+# 立体校正后的旋转矩阵（左右目平行，所以是单位阵）
+Stereo.T_c1_c2: !!opencv-matrix
+  rows: 4
+  cols: 4
+  dt: f
+  data: [1.0, 0.0, 0.0, -0.10095282,
+         0.0, 1.0, 0.0, 0.0,
+         0.0, 0.0, 1.0, 0.0,
+         0.0, 0.0, 0.0, 1.0]
+
+# Transformation from camera 0 to body-frame (imu)
+IMU.T_b_c1: !!opencv-matrix
+  rows: 4
+  cols: 4
+  dt: f
+  data: [-0.01054395,  0.05197718,  0.99859261, -0.00032719,
+         -0.99989933, -0.01003058, -0.01003565,  0.00111969,
+          0.00949484, -0.99859790,  0.05207771,  0.00033290,
+          0.0,         0.0,         0.0,         1.0]
+
+# IMU noise
+IMU.NoiseGyro: 0.00033656939796263414
+IMU.NoiseAcc: 0.0060970277928715025
+IMU.GyroWalk: 0.000018715660748877744
+IMU.AccWalk: 0.00037475905631128675
+IMU.Frequency: 100.0
+
+#--------------------------------------------------------------------------------------------
+# ORB Parameters
+#--------------------------------------------------------------------------------------------
+
+ORBextractor.nFeatures: 1200
+ORBextractor.scaleFactor: 1.2
+ORBextractor.nLevels: 8
+ORBextractor.iniThFAST: 20
+ORBextractor.minThFAST: 7
+
+#--------------------------------------------------------------------------------------------
+# Viewer Parameters
+#--------------------------------------------------------------------------------------------
+Viewer.KeyFrameSize: 0.05
+Viewer.KeyFrameLineWidth: 1.0
+Viewer.GraphLineWidth: 0.9
+Viewer.PointSize: 2.0
+Viewer.CameraSize: 0.08
+Viewer.CameraLineWidth: 3.0
+Viewer.ViewpointX: 0.0
+Viewer.ViewpointY: -0.7
+Viewer.ViewpointZ: -1.8
+Viewer.ViewpointF: 500.0
+Viewer.imageViewScale: 1.0

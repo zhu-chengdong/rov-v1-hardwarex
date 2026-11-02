@@ -1,0 +1,117 @@
+Total candidate pairs: 30
+[KEEP] test08_000108.png: common tags = 7, points = 28
+[KEEP] test08_000327.png: common tags = 7, points = 28
+[KEEP] test08_000374.png: common tags = 7, points = 28
+[KEEP] test08_000414.png: common tags = 7, points = 28
+[KEEP] test08_000615.png: common tags = 7, points = 28
+[KEEP] test08_000635.png: common tags = 8, points = 32
+[KEEP] test08_000772.png: common tags = 8, points = 32
+[KEEP] test08_000852.png: common tags = 7, points = 28
+[KEEP] test08_000879.png: common tags = 6, points = 24
+[KEEP] test08_000902.png: common tags = 8, points = 32
+[KEEP] test09_000045.png: common tags = 7, points = 28
+[KEEP] test09_000226.png: common tags = 8, points = 32
+[KEEP] test09_000428.png: common tags = 8, points = 32
+[KEEP] test09_000541.png: common tags = 6, points = 24
+[KEEP] test09_000827.png: common tags = 7, points = 28
+[KEEP] test09_000857.png: common tags = 9, points = 36
+[KEEP] test09_000880.png: common tags = 8, points = 32
+[KEEP] test09_000900.png: common tags = 6, points = 24
+[KEEP] test09_001217.png: common tags = 6, points = 24
+[KEEP] test09_001241.png: common tags = 8, points = 32
+[KEEP] test09_001287.png: common tags = 8, points = 32
+[KEEP] test10_000261.png: common tags = 7, points = 28
+[KEEP] test10_000301.png: common tags = 7, points = 28
+[KEEP] test10_000438.png: common tags = 9, points = 36
+[KEEP] test10_000540.png: common tags = 6, points = 24
+[KEEP] test10_000677.png: common tags = 8, points = 32
+[KEEP] test10_000912.png: common tags = 8, points = 32
+[KEEP] test10_000940.png: common tags = 8, points = 32
+[KEEP] test10_001061.png: common tags = 8, points = 32
+[KEEP] test10_001154.png: common tags = 7, points = 28
+
+====================================
+Valid stereo pairs: 30
+====================================
+
+Running left camera calibration...
+Running right camera calibration...
+Running stereo calibration...
+
+================ CALIBRATION RESULT ================
+Image size                : (1280, 800)
+Used stereo pairs         : 30
+Left reprojection error   : 1.946207
+Right reprojection error  : 1.625288
+Stereo reprojection error : 2.068231
+Baseline length (m)       : 0.144241224
+
+K1 (left) =
+[[1.07992586e+03 0.00000000e+00 6.08623311e+02]
+ [0.00000000e+00 1.07301394e+03 4.97796309e+02]
+ [0.00000000e+00 0.00000000e+00 1.00000000e+00]]
+
+D1 (left) =
+[[ 0.28402222  0.1413163   0.02214693 -0.00390392 -0.42496151]]
+
+K2 (right) =
+[[1.25503612e+03 0.00000000e+00 6.90893276e+02]
+ [0.00000000e+00 1.20801278e+03 3.54908600e+02]
+ [0.00000000e+00 0.00000000e+00 1.00000000e+00]]
+
+D2 (right) =
+[[ 0.47856057 -0.60233366 -0.02566246  0.02173034  1.13714236]]
+
+R =
+[[ 0.99589752 -0.02365976 -0.08734035]
+ [ 0.03346105  0.99308581  0.11252083]
+ [ 0.08407425 -0.11498172  0.98980338]]
+
+T =
+[[-0.10214611]
+ [ 0.02595429]
+ [ 0.09847882]]
+
+E =
+[[-0.00111312 -0.10078219  0.01460872]
+ [ 0.10666267 -0.01407492  0.09250339]
+ [-0.02926573 -0.10082578 -0.00922671]]
+
+F =
+[[-9.68296489e-08 -8.82347508e-06  5.82360346e-03]
+ [ 9.63972086e-06 -1.28022566e-06  3.79858302e-03]
+ [-6.54940929e-03 -4.52812699e-03  1.00000000e+00]]
+
+Used image pairs:
+test08_000108.png
+test08_000327.png
+test08_000374.png
+test08_000414.png
+test08_000615.png
+test08_000635.png
+test08_000772.png
+test08_000852.png
+test08_000879.png
+test08_000902.png
+test09_000045.png
+test09_000226.png
+test09_000428.png
+test09_000541.png
+test09_000827.png
+test09_000857.png
+test09_000880.png
+test09_000900.png
+test09_001217.png
+test09_001241.png
+test09_001287.png
+test10_000261.png
+test10_000301.png
+test10_000438.png
+test10_000540.png
+test10_000677.png
+test10_000912.png
+test10_000940.png
+test10_001061.png
+test10_001154.png
+
+Done.

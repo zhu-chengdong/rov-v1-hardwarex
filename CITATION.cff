@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: Please cite the versioned hardware source and the associated York-Tank article when applicable.
+title: V1 shallow-water stereo research robot
+type: software
+version: 0.1.0
+date-released: '2026-11-02'
+authors:
+  - family-names: Zhu
+    given-names: Chengdong
+  - family-names: Post
+    given-names: Mark
+repository-code: https://github.com/zhu-chengdong/rov-v1-hardwarex
+license: 'CERN-OHL-P-2.0 AND MIT AND CC-BY-4.0'

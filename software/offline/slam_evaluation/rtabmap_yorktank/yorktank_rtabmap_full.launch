@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+
+<launch>
+
+  <include file="$(find rtabmap_launch)/launch/rtabmap.launch">
+
+    <arg name="stereo" value="true"/>
+    <arg name="visual_odometry" value="true"/>
+
+    <arg name="left_image_topic"
+         value="/camera/left/image_rect_underwater"/>
+
+    <arg name="right_image_topic"
+         value="/camera/right/image_rect_underwater"/>
+
+    <arg name="left_camera_info_topic"
+         value="/yorktank/left/camera_info"/>
+
+    <arg name="right_camera_info_topic"
+         value="/yorktank/right/camera_info"/>
+
+    <arg name="frame_id" value="camera"/>
+    <arg name="vo_frame_id" value="odom"/>
+    <arg name="map_frame_id" value="map"/>
+
+    <arg name="odom_topic" value="/rtabmap_stereo_odom"/>
+    <arg name="publish_tf_odom" value="true"/>
+
+    <arg name="approx_sync" value="true"/>
+
+    <arg name="topic_queue_size" value="100"/>
+    <arg name="sync_queue_size" value="100"/>
+
+    <arg name="odom_args"
+         value="--Stereo/MaxDisparity 1024 --Odom/ImageBufferSize 0"/>
+
+    <arg name="args"
+         value="--delete_db_on_start --Rtabmap/CreateIntermediateNodes true --Rtabmap/ImageBufferSize 0"/>
+
+    <arg name="database_path"
+         value="$(env HARDWAREX_WORK_ROOT)/rtabmap_yorktank/results/1_reference1/rtabmap.db"/>
+
+    <arg name="rtabmap_viz" value="false"/>
+    <arg name="rviz" value="false"/>
+
+  </include>
+
+</launch>

@@ -1,0 +1,101 @@
+Total candidate pairs: 18
+[KEEP] test08_000635.png: common tags = 8, points = 32
+[KEEP] test08_000772.png: common tags = 8, points = 32
+[KEEP] test08_000852.png: common tags = 7, points = 28
+[KEEP] test08_000902.png: common tags = 8, points = 32
+[KEEP] test09_000226.png: common tags = 8, points = 32
+[KEEP] test09_000428.png: common tags = 8, points = 32
+[KEEP] test09_000827.png: common tags = 7, points = 28
+[KEEP] test09_000857.png: common tags = 9, points = 36
+[KEEP] test09_000880.png: common tags = 8, points = 32
+[KEEP] test09_001241.png: common tags = 8, points = 32
+[KEEP] test09_001287.png: common tags = 8, points = 32
+[KEEP] test10_000301.png: common tags = 7, points = 28
+[KEEP] test10_000438.png: common tags = 9, points = 36
+[KEEP] test10_000677.png: common tags = 8, points = 32
+[KEEP] test10_000912.png: common tags = 8, points = 32
+[KEEP] test10_000940.png: common tags = 8, points = 32
+[KEEP] test10_001061.png: common tags = 8, points = 32
+[KEEP] test10_001154.png: common tags = 7, points = 28
+
+====================================
+Valid stereo pairs: 18
+====================================
+
+Running left camera calibration...
+Running right camera calibration...
+Running stereo calibration...
+
+================ CALIBRATION RESULT ================
+Image size                : (1280, 800)
+Used stereo pairs         : 18
+Left reprojection error   : 2.021388
+Right reprojection error  : 1.688279
+Stereo reprojection error : 1.881460
+Baseline length (m)       : 0.100952820
+
+K1 (left) =
+[[1.03261282e+03 0.00000000e+00 6.06955302e+02]
+ [0.00000000e+00 1.04821655e+03 5.53973799e+02]
+ [0.00000000e+00 0.00000000e+00 1.00000000e+00]]
+
+D1 (left) =
+[[ 0.30383851]
+ [-0.07981107]
+ [ 0.03260515]
+ [-0.00549176]
+ [ 0.        ]]
+
+K2 (right) =
+[[1.03300296e+03 0.00000000e+00 6.53657101e+02]
+ [0.00000000e+00 1.04360581e+03 5.50384815e+02]
+ [0.00000000e+00 0.00000000e+00 1.00000000e+00]]
+
+D2 (right) =
+[[0.2529693 ]
+ [0.03115622]
+ [0.02931121]
+ [0.00362864]
+ [0.        ]]
+
+R =
+[[ 0.99784407 -0.02230725 -0.061722  ]
+ [ 0.02356253  0.99952854  0.01968506]
+ [ 0.06125378 -0.02109694  0.99789924]]
+
+T =
+[[-0.1001026 ]
+ [-0.000429  ]
+ [-0.01306743]]
+
+E =
+[[ 0.00028162  0.01307032 -0.00017087]
+ [-0.00690759 -0.00182036  0.10069885]
+ [-0.00193059 -0.10006497 -0.001997  ]]
+
+F =
+[[ 3.10945443e-07  1.42163319e-05 -8.25901487e-03]
+ [-7.54930153e-06 -1.95985465e-06  1.19310611e-01]
+ [ 1.74981908e-03 -1.20644657e-01  1.00000000e+00]]
+
+Used image pairs:
+test08_000635.png
+test08_000772.png
+test08_000852.png
+test08_000902.png
+test09_000226.png
+test09_000428.png
+test09_000827.png
+test09_000857.png
+test09_000880.png
+test09_001241.png
+test09_001287.png
+test10_000301.png
+test10_000438.png
+test10_000677.png
+test10_000912.png
+test10_000940.png
+test10_001061.png
+test10_001154.png
+
+Done.

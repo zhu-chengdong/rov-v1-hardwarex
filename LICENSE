@@ -1,0 +1,9 @@
+Mixed-licence source distribution
+
+Copyright (c) 2026 Chengdong Zhu and contributors.
+
+hardware/**: CERN Open Hardware Licence Version 2 - Permissive, CERN-OHL-P-2.0.
+software/** and validation/thermal/scripts/**: MIT.
+docs/**, README.md, validation data, manifests and metadata: CC-BY-4.0.
+
+The complete unmodified licence texts are in LICENSES/. No licence is granted to excluded commercial component CAD, third-party drivers/algorithms or the private development repository history. See THIRD_PARTY_NOTICES.md.

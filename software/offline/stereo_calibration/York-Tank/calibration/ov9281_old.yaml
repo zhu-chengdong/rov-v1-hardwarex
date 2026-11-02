@@ -1,0 +1,79 @@
+%YAML:1.0
+
+#--------------------------------------------------------------------------------------------
+# System config
+#--------------------------------------------------------------------------------------------
+
+File.version: "1.0"
+
+Camera.type: "PinHole"
+
+#--------------------------------------------------------------------------------------------
+# Camera Parameters
+#--------------------------------------------------------------------------------------------
+
+# Left camera
+Camera1.fx: 918.1980846779677
+Camera1.fy: 913.4184461788421
+Camera1.cx: 628.8940872510458
+Camera1.cy: 412.9263238949233
+
+Camera1.k1: 0.0618410330441939
+Camera1.k2: -0.07647686780950973
+Camera1.p1: -0.0011737591925196828
+Camera1.p2: 0.0020008817285008577
+
+# Right camera
+Camera2.fx: 928.638048732993
+Camera2.fy: 923.7413147689151
+Camera2.cx: 649.5173315281456
+Camera2.cy: 426.1879414790194
+
+Camera2.k1: 0.06593908853890194
+Camera2.k2: -0.08784869457491752
+Camera2.p1: 0.0003183573247158998
+Camera2.p2: 0.0007720276387766815
+
+Camera.width: 1280
+Camera.height: 800
+
+# Camera frames per second
+Camera.fps: 20
+
+# Color order of the images (ignored for grayscale, but keep 0 for your mono images)
+Camera.RGB: 0
+
+Stereo.ThDepth: 60.0
+Stereo.T_c1_c2: !!opencv-matrix
+  rows: 4
+  cols: 4
+  dt: f
+  data: [0.9991514519384755, -0.02288283454851392, -0.03424546644826839, -0.10097956752196743,
+         0.02303002343641552,  0.9997271287470184,  0.003909740113922653, -0.0012352915026068781,
+         0.03414665590877517, -0.004695096406422527, 0.9994058044458117, -0.002178696959650018,
+         0.0,                  0.0,                  0.0,                  1.0]
+
+#--------------------------------------------------------------------------------------------
+# ORB Parameters
+#--------------------------------------------------------------------------------------------
+
+ORBextractor.nFeatures: 1200
+ORBextractor.scaleFactor: 1.2
+ORBextractor.nLevels: 8
+ORBextractor.iniThFAST: 20
+ORBextractor.minThFAST: 7
+
+#--------------------------------------------------------------------------------------------
+# Viewer Parameters
+#--------------------------------------------------------------------------------------------
+Viewer.KeyFrameSize: 0.05
+Viewer.KeyFrameLineWidth: 1.0
+Viewer.GraphLineWidth: 0.9
+Viewer.PointSize: 2.0
+Viewer.CameraSize: 0.08
+Viewer.CameraLineWidth: 3.0
+Viewer.ViewpointX: 0.0
+Viewer.ViewpointY: -0.7
+Viewer.ViewpointZ: -1.8
+Viewer.ViewpointF: 500.0
+Viewer.imageViewScale: 1.0
