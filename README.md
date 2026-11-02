@@ -1,10 +1,10 @@
 # V1 shallow water stereo research robot
 
-Initial public engineering release v0.1.0, 2 November 2026.
+Public software and documentation snapshot, 2 November 2026. The complete v0.1.0 source bundle is prepared; its attachment to the public main branch is awaiting explicit publication confirmation.
 
 V1 combines a commercial acrylic enclosure, six thrusters, two lights, a Pixhawk-compatible controller and a Jetson Orin Nano. Custom acrylic stereo mounts provide 80, 100 and 120 mm nominal mounting positions behind a shared flat front window. The internal payload rack can be withdrawn through the rear for maintenance. The platform is intended for supervised shallow-water research.
 
-## Files and use
+## Prepared complete bundle and available software
 
 - `hardware/native_2018` contains the eleven custom editable SolidWorks part sources. `hardware/exports` contains their available DXF, STEP and STL manufacturing/interchange forms. Geometry is in millimetres.
 - `hardware/manufacturing_2024_R1` contains five 2024 review drawings, their unchanged model copies and PDF exports. Preserve relative folders when opening drawings. Tolerances and acceptance requirements remain unresolved; these are review drawings.
@@ -14,7 +14,7 @@ V1 combines a commercial acrylic enclosure, six thrusters, two lights, a Pixhawk
 - `software/offline` contains 27 calibration, processing, GT-camera and RTAB-Map helper files; `docs/offline_processing.md` describes their static interfaces. These do not include a complete GT solver or the ORB-SLAM3/SVO implementations.
 - `validation/thermal` contains existing auxiliary air/water observations and analysis. They are not a controlled thermal comparison or proof of full-duration camera operation.
 
-The GitHub repository includes a complete source bundle named `V1_HardwareX_Open_Source_v0.1.0.zip`. If browsing the repository without extracted hardware directories, extract that bundle into a separate directory to obtain all native CAD, drawings and source files. `manifest.json` records each published file and its licence; `SHA256SUMS` verifies the bundle contents.
+The main branch currently exposes the selected author software, build documentation, licence texts and bundle manifest. The eleven native CAD parts, review drawings, editable wiring figures and raw thermal data are contained in the prepared `V1_HardwareX_Open_Source_v0.1.0.zip` candidate and are not yet attached to the main branch. The directory descriptions above refer to that complete candidate. `manifest.json` and `SHA256SUMS` describe its intended contents; they do not imply every listed file is already available in the main branch. Completion is awaiting explicit confirmation of this file scope and destination.
 
 ## Reuse and licences
 
