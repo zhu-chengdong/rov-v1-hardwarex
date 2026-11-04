@@ -1,0 +1,109 @@
+{
+  "host_scope": "Historical Ubuntu 20.04 x86_64 laptop metadata only; not a Jetson lockfile or a clean-install validation",
+  "python_metadata": [
+    {
+      "name": "rosbag",
+      "version": "1.17.4",
+      "installation_scope": "ROS Python packages"
+    },
+    {
+      "name": "rospy",
+      "version": "1.17.4",
+      "installation_scope": "ROS Python packages"
+    },
+    {
+      "name": "catkin",
+      "version": "0.8.12",
+      "installation_scope": "ROS Python packages"
+    },
+    {
+      "name": "scipy",
+      "version": "1.10.1",
+      "installation_scope": "user Python packages"
+    },
+    {
+      "name": "opencv-python",
+      "version": "4.13.0.92",
+      "installation_scope": "user Python packages"
+    },
+    {
+      "name": "numpy",
+      "version": "1.24.4",
+      "installation_scope": "user Python packages"
+    },
+    {
+      "name": "dt-apriltags",
+      "version": "3.1.7",
+      "installation_scope": "user Python packages"
+    },
+    {
+      "name": "pupil_apriltags",
+      "version": "1.0.4.post11",
+      "installation_scope": "user Python packages"
+    },
+    {
+      "name": "numpy",
+      "version": "1.17.4",
+      "installation_scope": "system Python packages"
+    },
+    {
+      "name": "PyYAML",
+      "version": "5.3.1",
+      "installation_scope": "system Python packages"
+    }
+  ],
+  "apt_metadata": [
+    {
+      "package": "libopencv-dev",
+      "status": "installed",
+      "version": "4.2.0+dfsg-5"
+    },
+    {
+      "package": "python3-opencv",
+      "status": "installed",
+      "version": "4.2.0+dfsg-5"
+    },
+    {
+      "package": "ros-noetic-cv-bridge",
+      "status": "installed",
+      "version": "1.16.2-1focal.20250519.235655"
+    },
+    {
+      "package": "ros-noetic-nav-msgs",
+      "status": "installed",
+      "version": "1.13.2-1focal.20250426.013359"
+    },
+    {
+      "package": "ros-noetic-rosbag",
+      "status": "installed",
+      "version": "1.17.4-1focal.20250519.234429"
+    },
+    {
+      "package": "ros-noetic-rospy",
+      "status": "installed",
+      "version": "1.17.4-1focal.20250519.231646"
+    },
+    {
+      "package": "ros-noetic-rtabmap-launch",
+      "status": "installed",
+      "version": "0.21.13-1focal.20250521.020250"
+    },
+    {
+      "package": "ros-noetic-rtabmap-odom",
+      "status": "installed",
+      "version": "0.21.13-1focal.20250521.015059"
+    },
+    {
+      "package": "ros-noetic-sensor-msgs",
+      "status": "installed",
+      "version": "1.13.2-1focal.20250519.234916"
+    },
+    {
+      "package": "systemd-timesyncd",
+      "status": "installed",
+      "version": "245.4-4ubuntu3.24"
+    }
+  ],
+  "executed_robot_or_processing_programs": false,
+  "current_note": "Jetson observations are documented separately in deployment.md; no additional equipment readings requested."
+}

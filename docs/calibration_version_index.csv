@@ -1,0 +1,4 @@
+﻿版本,图像对数,估计基线_m,公开文件,SHA256,关系
+v1,30,0.144241224,software/offline/stereo_calibration/calib_final/calibration_result.txt,55a7ae06d63eaf7954f2530ea3221183bfd351d03725c1c4d2dc6c6a3f0800f5,30→25→18为迭代，不对应80/100/120 mm三档
+v2,25,0.121947074,software/offline/stereo_calibration/calib_final/calibration_result_v2.txt,6576876ae5e067aa57f63ddcebc7a270fc1275fdfdbdddc2f1e188e4566b17af,30→25→18为迭代，不对应80/100/120 mm三档
+v3,18,0.10095282,software/offline/stereo_calibration/calib_final_v3/calibration_result_v3.txt,53d83f84ef515b261cb21b6e77d2aa250670e5254e1fcf42f7a3dd1289d66567,30→25→18为迭代，不对应80/100/120 mm三档

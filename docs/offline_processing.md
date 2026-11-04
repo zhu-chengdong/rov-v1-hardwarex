@@ -1,40 +1,23 @@
-# 实验文件的离线使用说明
+# 离线处理工具使用与证据
 
-以下接口与示例来自源码静态检查，尚未运行验证。它们用于独立的实验数据目录；机载入口另见deployment.md；本文只说明离线工具。
+本目录提供现有工具的静态接口和参数对应。源码13个Python文件已通过AST语法解析，没有执行bag处理、标定或评测。机载部署另见deployment.md；算法结果仍引用独立York-Tank研究。
 
-## 独立工作目录
+## 目录与输入
 
-```bash
-export HARDWAREX_WORK_ROOT=/absolute/path/to/private_data_work
-export ROV_REPO_ROOT=/absolute/path/to/rov-v1-hardwarex/software/offline
-```
+将HARDWAREX_WORK_ROOT设为自己的独立数据目录，将ROV_REPO_ROOT设为解压包的software/offline目录。输入输出字段和源文件对应见data_layout.md及PATH_CLEANUP.json。依赖索引见imports_by_file.json；dependencies_observed.json保存历史x86_64笔记本的观察版本，不能当成Jetson锁定安装清单。
 
-两个路径示例均为待替换占位符。HARDWAREX_WORK_ROOT 必须为绝对路径，承载输入数据和新输出，不指向源工程。含历史路径的 Python 文件显式读取该环境变量；未设置会报错。docs/PATH_CLEANUP.json 列出保留的数据相对布局。launch 中的数据库路径也使用该变量。
+拆分脚本接收--inbag和--outbag，输入默认2560×800 mono8、/camera/image_raw，在1280列分为左右图像并复制/imu/data。拼接图左半幅对应机器人左相机。非预期尺寸、编码、步长或长度将跳过并输出警告，其他未指定话题不自动保留。
 
-## bag 拆分与水下矫正
+水下校正脚本接收--inbag和--outbag，在保留原始左右图像的同时新增/camera/left/image_rect_underwater和/camera/right/image_rect_underwater，丢弃指定的旧空气校正话题，保留其余话题。内部参数与v3的18对标定报告一致。原始参数YAML与已校正参数YAML应按输入图像状态使用，具体数值对应见processing_evidence.md。
 
-在自己的数据处理 shell 中加载所使用的 ROS 环境。当前笔记本已观测到的 ROS 路径示例是 /opt/ros/noetic/setup.bash，不代表 Jetson 路径或推荐依赖版本。
+## 两种导出方式
 
-```bash
-source /opt/ros/noetic/setup.bash
-python3 "$ROV_REPO_ROOT/dataset_processing/split_stereo_bag_no_cvbridge.py" --inbag "$HARDWAREX_WORK_ROOT/input/raw_stereo.bag" --outbag "$HARDWAREX_WORK_ROOT/output/split_stereo.bag"
-python3 "$ROV_REPO_ROOT/dataset_processing/rectify_stereo_bag_underwater.py" --inbag "$HARDWAREX_WORK_ROOT/output/split_stereo.bag" --outbag "$HARDWAREX_WORK_ROOT/output/rectified_underwater.bag"
-```
+stereo_to_image.py按header时间进行一对一配对，接受时间差不超过0.02 s，左右同用左图时间并保留9位小数。process_yorktank_bags.py过滤校正话题和IMU后逐路导出，左右分别使用自身header命名，不执行前一脚本的配对。后者遇到已有filtered bag会跳过过滤。输出使用独立新目录，避免旧图混入。
 
-输入数据不在仓库中；输出父目录需预先存在，输出使用新的文件名。拆分默认拼接图像 2560×800，切分列 1280，输入 /camera/image_raw，同时保留 /imu/data；10月14日记录已核对为2560×800 mono8；物理左右目对应仍待核。水下矫正脚本硬编码第三轮参数，保留原始左右图像，在输出中添加 /camera/left/image_rect_underwater 和 /camera/right/image_rect_underwater，并移除旧空气矫正话题。
+fix_imu_time.py会同时改写IMU header及bag时间，不能作为默认同步操作。test_time_gap.py统计bag记录时间t，不能证明曝光同步或UTC精度。
 
-rectify_stereo_bag.py 是另一套历史空气参数，不能直接当作水下流程。fix_imu_time.py 均匀重建输出 IMU header.stamp 与 bag 时间，是否符合实验条件及用于哪些序列为 TO VERIFY。test_time_gap.py 是时间统计，不能证明同步实现。
+## 标定与GT
 
-## 标定与数据转换
+三轮30、25、18对报告属于标定迭代，不对应三个机械档位。相机标定板6×6、tag36h11、标签边长0.044 m、间距比0.3，GT板为3×3。人工选图依据作者确认记录；当前程序阈值不替代全部历史操作日志。
 
-stereo_calibration/calib_underwater 中的 scan_candidates.py 读取 bags/test_09 图像，输出 calib_candidates；select_final_30.py 输出 calib_final；calibration.py 当前读取 calib_final_v3。缺少 18 对筛选依据，三者还不是已验证的一键复现链。板规格、历史版本和最终使用记录见标定核查。
-
-dataset_processing 中的 stereo_to_image.py 导出并按时间差匹配左右图像；York-Tank/docs/process_yorktank_bags.py 调用 rosbag filter 并导出图像、IMU CSV。数据布局见路径记录；部分脚本有顶层文件输出操作，不能通过 import 试运行。
-
-york_tank_gt/bag_to_images.py 按图像 header 时间保存图片，ov2311.yaml 保存相机配置；完整 GT 求解、尺度和验证流程尚未包含，均为 TO VERIFY。
-
-## RTAB-Map 评估
-
-slam_evaluation/rtabmap_yorktank 中的四个文件依赖已有 RTAB-Map 和 ROS 环境。CameraInfo 脚本订阅水下矫正图像并发布 /yorktank/left/camera_info 与 /yorktank/right/camera_info；两个 launch 可按绝对路径交给 roslaunch；save_rtabmap_traj.py 需要一个输出路径参数。完整离线回放编排尚未验证，运行输出置于独立工作目录。
-
-已收集的机载入口及其证据范围见deployment.md。这里的离线示例不替代机载控制步骤。
+GT相机导出和RTAB-Map辅助程序均按单独用途提供，没有完整GT求解器、ORB-SLAM3或SVO Pro实现。本硬件工具包的清洁环境端到端运行未检查。

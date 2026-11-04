@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="190mm" height="176.8462mm" viewBox="0 0 1300 1210">
+<title>V1 | Power architecture</title>
+<desc>Current V1 functional connection architecture. Text and shapes remain editable. No physical terminal numbering is inferred.</desc>
+<rect width="1300" height="1210" fill="white"/>
+<text x="40" y="46" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="700" fill="#172B3A" text-anchor="start">V1 | Power architecture</text>
+<text x="40" y="79" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" fill="#526675" text-anchor="start">Current hardware configuration · two battery domains with a common signal reference</text>
+<rect x="30" y="105" width="1240" height="680" rx="12" fill="#FEFCF9" stroke="#CBB99F" stroke-width="1.8"/>
+<text x="55" y="140" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" fill="#A95F25" text-anchor="start">6S  PROPULSION / AUXILIARY DOMAIN</text>
+<rect x="55" y="175" width="190" height="120" rx="9" fill="#F9EEE0" stroke="#A95F25" stroke-width="1.8"/>
+<text x="150.0" y="217.4" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#172B3A" text-anchor="middle">GNB 6S LiPo</text>
+<text x="150.0" y="246.44" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" fill="#172B3A" text-anchor="middle">22.2 V nominal</text>
+<text x="150.0" y="271.52" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" fill="#172B3A" text-anchor="middle">6500 mAh</text>
+<rect x="280" y="209" width="100" height="52" rx="9" fill="#FFFFFF" stroke="#A5B2BE" stroke-width="1.8"/>
+<text x="330.0" y="242.48" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#172B3A" text-anchor="middle">XT90</text>
+<polyline points="245,235 280,235" fill="none" stroke="#A95F25" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="280,235 270.0,231.0 270.0,239.0" fill="#A95F25"/>
+<polyline points="380,235 435,235" fill="none" stroke="#A95F25" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="435,235 425.0,231.0 425.0,239.0" fill="#A95F25"/>
+<rect x="435" y="175" width="285" height="530" rx="9" fill="#FFFFFF" stroke="#A95F25" stroke-width="1.8"/>
+<text x="577.5" y="212" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" fill="#172B3A" text-anchor="middle">Paired busbars</text>
+<rect x="453" y="290" width="249" height="74" rx="9" fill="#F9EEE0" stroke="#D2BDA5" stroke-width="1.8"/>
+<text x="577.5" y="321.26" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#172B3A" text-anchor="middle">Positive busbar</text>
+<text x="577.5" y="347.65999999999997" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" fill="#172B3A" text-anchor="middle">8 positions</text>
+<rect x="453" y="385" width="249" height="74" rx="9" fill="#F3F5F7" stroke="#A5B2BE" stroke-width="1.8"/>
+<text x="577.5" y="416.26" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#172B3A" text-anchor="middle">Negative busbar</text>
+<text x="577.5" y="442.65999999999997" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" fill="#172B3A" text-anchor="middle">8 positions</text>
+<text x="577.5" y="510" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#172B3A" text-anchor="middle">Position allocation</text>
+<text x="577.5" y="546" font-family="Arial, Helvetica, sans-serif" font-size="18.5" font-weight="400" fill="#172B3A" text-anchor="middle">1 input</text>
+<text x="577.5" y="576" font-family="Arial, Helvetica, sans-serif" font-size="18.5" font-weight="400" fill="#172B3A" text-anchor="middle">6 thruster branches</text>
+<text x="577.5" y="606" font-family="Arial, Helvetica, sans-serif" font-size="18.5" font-weight="400" fill="#172B3A" text-anchor="middle">1 shared auxiliary position</text>
+<polyline points="720,206 975,206" fill="none" stroke="#A95F25" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="975,206 965.0,202.0 965.0,210.0" fill="#A95F25"/>
+<rect x="975" y="181" width="267" height="50" rx="9" fill="#FFFFFF" stroke="#C9B59F" stroke-width="1.8"/>
+<text x="1108.5" y="213.14" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#172B3A" text-anchor="middle">VIOCEAN T6 · T1</text>
+<polyline points="720,264 975,264" fill="none" stroke="#A95F25" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="975,264 965.0,260.0 965.0,268.0" fill="#A95F25"/>
+<rect x="975" y="239" width="267" height="50" rx="9" fill="#FFFFFF" stroke="#C9B59F" stroke-width="1.8"/>
+<text x="1108.5" y="271.14" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#172B3A" text-anchor="middle">VIOCEAN T6 · T2</text>
+<polyline points="720,322 975,322" fill="none" stroke="#A95F25" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="975,322 965.0,318.0 965.0,326.0" fill="#A95F25"/>
+<rect x="975" y="297" width="267" height="50" rx="9" fill="#FFFFFF" stroke="#C9B59F" stroke-width="1.8"/>
+<text x="1108.5" y="329.14" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#172B3A" text-anchor="middle">VIOCEAN T6 · T3</text>
+<polyline points="720,380 975,380" fill="none" stroke="#A95F25" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="975,380 965.0,376.0 965.0,384.0" fill="#A95F25"/>
+<rect x="975" y="355" width="267" height="50" rx="9" fill="#FFFFFF" stroke="#C9B59F" stroke-width="1.8"/>
+<text x="1108.5" y="387.14" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#172B3A" text-anchor="middle">VIOCEAN T6 · T4</text>
+<polyline points="720,438 975,438" fill="none" stroke="#A95F25" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="975,438 965.0,434.0 965.0,442.0" fill="#A95F25"/>
+<rect x="975" y="413" width="267" height="50" rx="9" fill="#FFFFFF" stroke="#C9B59F" stroke-width="1.8"/>
+<text x="1108.5" y="445.14" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#172B3A" text-anchor="middle">VIOCEAN T6 · T5</text>
+<polyline points="720,496 975,496" fill="none" stroke="#A95F25" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="975,496 965.0,492.0 965.0,500.0" fill="#A95F25"/>
+<rect x="975" y="471" width="267" height="50" rx="9" fill="#FFFFFF" stroke="#C9B59F" stroke-width="1.8"/>
+<text x="1108.5" y="503.14" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#172B3A" text-anchor="middle">VIOCEAN T6 · T6</text>
+<text x="847" y="164" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" fill="#A95F25" text-anchor="middle">Six direct 6S branches</text>
+<text x="1108.5" y="554" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" fill="#526675" text-anchor="middle">Integrated ESC in each T6</text>
+<polyline points="720,639 850,639" fill="none" stroke="#A95F25" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="850" cy="639" r="4" fill="#A95F25"/>
+<polyline points="850,639 850,595 975,595" fill="none" stroke="#A95F25" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="975,595 965.0,591.0 965.0,599.0" fill="#A95F25"/>
+<polyline points="850,639 850,657 975,657" fill="none" stroke="#A95F25" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="975,657 965.0,653.0 965.0,661.0" fill="#A95F25"/>
+<polyline points="850,657 850,726 943,726" fill="none" stroke="#A95F25" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="943,726 933.0,722.0 933.0,730.0" fill="#A95F25"/>
+<circle cx="850" cy="657" r="4" fill="#A95F25"/>
+<rect x="975" y="573" width="267" height="44" rx="9" fill="#FFFFFF" stroke="#A5B2BE" stroke-width="1.8"/>
+<text x="1108.5" y="602.14" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#172B3A" text-anchor="middle">Left WL-1500</text>
+<rect x="975" y="635" width="267" height="44" rx="9" fill="#FFFFFF" stroke="#A5B2BE" stroke-width="1.8"/>
+<text x="1108.5" y="664.14" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#172B3A" text-anchor="middle">Right WL-1500</text>
+<rect x="943" y="703" width="118" height="46" rx="9" fill="#FFFFFF" stroke="#A5B2BE" stroke-width="1.8"/>
+<text x="1002.0" y="733.14" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#172B3A" text-anchor="middle">PM02</text>
+<rect x="1122" y="703" width="120" height="46" rx="9" fill="#FFFFFF" stroke="#A5B2BE" stroke-width="1.8"/>
+<text x="1182.0" y="733.14" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#172B3A" text-anchor="middle">Pixhawk</text>
+<polyline points="1061,726 1122,726" fill="none" stroke="#A95F25" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="1122,726 1112.0,722.0 1112.0,730.0" fill="#A95F25"/>
+<text x="790" y="625" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#A95F25" text-anchor="middle">Shared AUX</text>
+<text x="790" y="665" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#526675" text-anchor="middle">same position</text>
+<text x="1182" y="775" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#526675" text-anchor="middle">2.4.8</text>
+<text x="1094" y="698" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#526675" text-anchor="middle">supply</text>
+<text x="55" y="745" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" fill="#526675" text-anchor="start">PM02 supplies Pixhawk only;</text>
+<text x="55" y="771" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" fill="#526675" text-anchor="start">it is outside the main thruster-current path.</text>
+<rect x="30" y="815" width="1240" height="220" rx="12" fill="#FAFCFE" stroke="#AFC6D5" stroke-width="1.8"/>
+<text x="55" y="850" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" fill="#226A99" text-anchor="start">4S  COMPUTING DOMAIN</text>
+<rect x="55" y="874" width="180" height="104" rx="9" fill="#FFFFFF" stroke="#97B4C8" stroke-width="1.8"/>
+<text x="145.0" y="909.04" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#172B3A" text-anchor="middle">HRB 4S LiPo</text>
+<text x="145.0" y="935.4399999999999" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" fill="#172B3A" text-anchor="middle">14.8 V nominal</text>
+<text x="145.0" y="959.1999999999999" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" fill="#172B3A" text-anchor="middle">6000 mAh · EC5</text>
+<rect x="280" y="874" width="175" height="104" rx="9" fill="#FFFFFF" stroke="#97B4C8" stroke-width="1.8"/>
+<text x="367.5" y="920.92" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#172B3A" text-anchor="middle">EC5 → XT60</text>
+<text x="367.5" y="947.3199999999999" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" fill="#172B3A" text-anchor="middle">adapter</text>
+<rect x="500" y="874" width="100" height="104" rx="9" fill="#FFFFFF" stroke="#97B4C8" stroke-width="1.8"/>
+<text x="550.0" y="932.8" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#172B3A" text-anchor="middle">XT60</text>
+<rect x="645" y="874" width="220" height="104" rx="9" fill="#FFFFFF" stroke="#97B4C8" stroke-width="1.8"/>
+<text x="755.0" y="909.04" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#172B3A" text-anchor="middle">XT60 → DC</text>
+<text x="755.0" y="935.4399999999999" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" fill="#172B3A" text-anchor="middle">5.5 × 2.5 mm</text>
+<text x="755.0" y="959.1999999999999" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" fill="#172B3A" text-anchor="middle">barrel adapter</text>
+<rect x="910" y="874" width="332" height="104" rx="9" fill="#FFFFFF" stroke="#97B4C8" stroke-width="1.8"/>
+<text x="1076.0" y="909.04" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#172B3A" text-anchor="middle">Jetson Orin Nano</text>
+<text x="1076.0" y="935.4399999999999" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" fill="#172B3A" text-anchor="middle">Official carrier board</text>
+<text x="1076.0" y="959.1999999999999" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" fill="#172B3A" text-anchor="middle">DC jack · direct 4S input</text>
+<polyline points="235,926 280,926" fill="none" stroke="#226A99" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="280,926 270.0,922.0 270.0,930.0" fill="#226A99"/>
+<polyline points="455,926 500,926" fill="none" stroke="#226A99" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="500,926 490.0,922.0 490.0,930.0" fill="#226A99"/>
+<polyline points="600,926 645,926" fill="none" stroke="#226A99" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="645,926 635.0,922.0 635.0,930.0" fill="#226A99"/>
+<polyline points="865,926 910,926" fill="none" stroke="#226A99" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="910,926 900.0,922.0 900.0,930.0" fill="#226A99"/>
+<text x="650" y="1016" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#226A99" text-anchor="middle">No external DC/DC regulator on the Jetson branch</text>
+<text x="40" y="1071" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" fill="#526675" text-anchor="start">Each supply line represents DC + and return. Busbar positions are allocations, not stud numbers.</text>
+<text x="40" y="1102" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" fill="#526675" text-anchor="start">Shared reference is through USB–UART GND; the positive battery supplies remain separate.</text>
+<text x="40" y="1144" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#A95F25" text-anchor="start">ABSENT</text>
+<text x="144" y="1144" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" fill="#172B3A" text-anchor="start">Main / branch fuses · DC breaker · external master switch</text>
+<text x="144" y="1174" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" fill="#172B3A" text-anchor="start">6S voltage/current monitoring · low-voltage warning / cutoff</text>
+</svg>

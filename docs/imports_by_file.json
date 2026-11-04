@@ -1,0 +1,92 @@
+{
+  "dataset_processing/fix_imu_time.py": [
+    "copy",
+    "genpy",
+    "os",
+    "rosbag"
+  ],
+  "dataset_processing/rectify_stereo_bag.py": [
+    "argparse",
+    "cv2",
+    "cv_bridge",
+    "numpy",
+    "os",
+    "rosbag",
+    "sensor_msgs.msg",
+    "sys"
+  ],
+  "dataset_processing/rectify_stereo_bag_underwater.py": [
+    "argparse",
+    "cv2",
+    "cv_bridge",
+    "numpy",
+    "os",
+    "rosbag",
+    "sys"
+  ],
+  "dataset_processing/split_stereo_bag_no_cvbridge.py": [
+    "argparse",
+    "os",
+    "rosbag",
+    "sensor_msgs.msg",
+    "sys"
+  ],
+  "dataset_processing/stereo_to_image.py": [
+    "cv2",
+    "cv_bridge",
+    "os",
+    "rosbag"
+  ],
+  "dataset_processing/test_time_gap.py": [
+    "numpy",
+    "os",
+    "rosbag"
+  ],
+  "dataset_processing/York-Tank/docs/process_yorktank_bags.py": [
+    "csv",
+    "cv2",
+    "cv_bridge",
+    "os",
+    "rosbag",
+    "subprocess"
+  ],
+  "slam_evaluation/rtabmap_yorktank/save_rtabmap_traj.py": [
+    "math",
+    "nav_msgs.msg",
+    "rospy",
+    "sys"
+  ],
+  "slam_evaluation/rtabmap_yorktank/yorktank_camera_info.py": [
+    "rospy",
+    "sensor_msgs.msg"
+  ],
+  "stereo_calibration/calib_underwater/calibration.py": [
+    "cv2",
+    "numpy",
+    "os",
+    "pathlib",
+    "pupil_apriltags"
+  ],
+  "stereo_calibration/calib_underwater/scan_candidates.py": [
+    "csv",
+    "cv2",
+    "numpy",
+    "os",
+    "pathlib",
+    "pupil_apriltags",
+    "shutil"
+  ],
+  "stereo_calibration/calib_underwater/select_final_30.py": [
+    "csv",
+    "os",
+    "pathlib",
+    "re",
+    "shutil"
+  ],
+  "york_tank_gt/bag_to_images.py": [
+    "cv2",
+    "cv_bridge",
+    "os",
+    "rosbag"
+  ]
+}

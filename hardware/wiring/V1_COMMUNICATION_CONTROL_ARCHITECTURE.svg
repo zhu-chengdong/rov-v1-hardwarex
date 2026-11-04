@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="190mm" height="160.7692mm" viewBox="0 0 1300 1100">
+<title>V1 | Communication and control</title>
+<desc>Current V1 functional connection architecture. Text and shapes remain editable. No physical terminal numbering is inferred.</desc>
+<rect width="1300" height="1100" fill="white"/>
+<text x="40" y="46" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="700" fill="#172B3A" text-anchor="start">V1 | Communication and control</text>
+<text x="40" y="79" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" fill="#526675" text-anchor="start">Companion-computer-centred link · power paths are shown in the separate power diagram</text>
+<rect x="60" y="135" width="260" height="118" rx="9" fill="#F5F8FA" stroke="#8FAAB9" stroke-width="1.8"/>
+<text x="190.0" y="189.3" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" fill="#172B3A" text-anchor="middle">Surface PC</text>
+<text x="190.0" y="222.3" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" fill="#172B3A" text-anchor="middle">Commands / status</text>
+<rect x="650" y="135" width="550" height="118" rx="9" fill="#EEF5FA" stroke="#226A99" stroke-width="1.8"/>
+<text x="925.0" y="188.64" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" fill="#172B3A" text-anchor="middle">Jetson Orin Nano</text>
+<text x="925.0" y="221.64" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="400" fill="#172B3A" text-anchor="middle">Custom Python MAVLink bridge</text>
+<polyline points="320,194 650,194" fill="none" stroke="#337584" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="650,194 640.0,190.0 640.0,198.0" fill="#337584"/>
+<polygon points="320,194 330.0,198.0 330.0,190.0" fill="#337584"/>
+<text x="485" y="162" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" fill="#172B3A" text-anchor="middle">Ethernet · 5 m UTP</text>
+<text x="485" y="224" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" fill="#526675" text-anchor="middle">RJ45 · T568B · M12 passage</text>
+<polyline points="925,253 925,315 265,315 265,375" fill="none" stroke="#337584" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="265,375 269.0,365.0 261.0,365.0" fill="#337584"/>
+<polygon points="925,253 921.0,263.0 929.0,263.0" fill="#337584"/>
+<text x="580" y="302" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" fill="#172B3A" text-anchor="middle">USB host link</text>
+<rect x="70" y="375" width="360" height="218" rx="9" fill="#F8FAFC" stroke="#90AAB8" stroke-width="1.8"/>
+<text x="250" y="416" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#172B3A" text-anchor="middle">FT232RL USB–UART</text>
+<text x="250" y="447" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" fill="#526675" text-anchor="middle">3.3 V TTL serial</text>
+<rect x="825" y="375" width="375" height="218" rx="9" fill="#F3F7F9" stroke="#90AAB8" stroke-width="1.8"/>
+<text x="1012.5" y="416" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" fill="#172B3A" text-anchor="middle">Pixhawk 2.4.8</text>
+<text x="1012.5" y="447" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" fill="#172B3A" text-anchor="middle">ArduSub · TELEM1 port</text>
+<text x="409" y="483" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#172B3A" text-anchor="end">TX</text>
+<text x="845" y="483" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#172B3A" text-anchor="start">RX</text>
+<polyline points="430,477 825,477" fill="none" stroke="#337584" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="825,477 815.0,473.0 815.0,481.0" fill="#337584"/>
+<text x="409" y="528" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#172B3A" text-anchor="end">RX</text>
+<text x="845" y="528" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#172B3A" text-anchor="start">TX</text>
+<polyline points="430,522 825,522" fill="none" stroke="#337584" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="430,522 440.0,526.0 440.0,518.0" fill="#337584"/>
+<text x="409" y="573" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#172B3A" text-anchor="end">GND</text>
+<text x="845" y="573" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#172B3A" text-anchor="start">GND</text>
+<polyline points="430,567 825,567" fill="none" stroke="#51616D" stroke-width="2.5" stroke-linejoin="round"/>
+<text x="627.5" y="463" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" fill="#337584" text-anchor="middle">MAVLink serial data</text>
+<text x="627.5" y="553" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" fill="#51616D" text-anchor="middle">Common reference</text>
+<polyline points="250,593 250,625" fill="none" stroke="#51616D" stroke-width="2.5" stroke-linejoin="round"/>
+<polyline points="243,625 257,639" fill="none" stroke="#51616D" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="243,639 257,625" fill="none" stroke="#51616D" stroke-width="2" stroke-linejoin="round"/>
+<text x="250" y="670" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#172B3A" text-anchor="middle">VCC / 3.3 V — NOT CONNECTED</text>
+<text x="250" y="700" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" fill="#526675" text-anchor="middle">UART power pin intentionally unused</text>
+<rect x="70" y="750" width="580" height="105" rx="9" fill="#F4F6F8" stroke="#BBC6CF" stroke-width="1.8"/>
+<text x="360" y="791" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#172B3A" text-anchor="middle">Common ground exists</text>
+<text x="360" y="828" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" fill="#172B3A" text-anchor="middle">The USB–UART link is NOT galvanically isolated.</text>
+<polyline points="1012.5,593 1012.5,671" fill="none" stroke="#337584" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="1012.5,671 1016.5,661.0 1008.5,661.0" fill="#337584"/>
+<rect x="825" y="671" width="375" height="82" rx="9" fill="#FFFFFF" stroke="#A5B2BE" stroke-width="1.8"/>
+<text x="1012.5" y="707.3" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" fill="#172B3A" text-anchor="middle">MAIN OUT 1–8</text>
+<text x="1012.5" y="740.3" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" fill="#172B3A" text-anchor="middle">8 PWM output channels</text>
+<polyline points="895,753 895,900 592.5,900 592.5,960" fill="none" stroke="#337584" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="592.5,960 596.5,950.0 588.5,950.0" fill="#337584"/>
+<polyline points="1120,753 1120,936 1057.5,936 1057.5,960" fill="none" stroke="#337584" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="1057.5,960 1061.5,950.0 1053.5,950.0" fill="#337584"/>
+<text x="718" y="882" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#172B3A" text-anchor="middle">6 channels</text>
+<text x="1190" y="915" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#172B3A" text-anchor="middle">2 channels</text>
+<rect x="380" y="960" width="425" height="83" rx="9" fill="#FFFFFF" stroke="#A5B2BE" stroke-width="1.8"/>
+<text x="592.5" y="996.12" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" fill="#172B3A" text-anchor="middle">6 × VIOCEAN T6</text>
+<text x="592.5" y="1026.48" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" fill="#172B3A" text-anchor="middle">PWM → integrated ESC</text>
+<rect x="915" y="960" width="285" height="83" rx="9" fill="#FFFFFF" stroke="#A5B2BE" stroke-width="1.8"/>
+<text x="1057.5" y="996.78" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" fill="#172B3A" text-anchor="middle">2 × WL-1500</text>
+<text x="1057.5" y="1027.1399999999999" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" fill="#172B3A" text-anchor="middle">PWM brightness control</text>
+<text x="40" y="1090" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" fill="#526675" text-anchor="start">Individual PWM outputs are not tied together. Positions in Table 8; PWM7 left light, PWM8 right light.</text>
+</svg>

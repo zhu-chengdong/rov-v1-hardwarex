@@ -1,0 +1,85 @@
+[
+  {
+    "file": "dataset_processing/fix_imu_time.py",
+    "runtime_root_environment_variable": "HARDWAREX_WORK_ROOT",
+    "work_root_relative_paths": [
+      "bags/newbag/dataset/sequence_08/5_lr_rect_underwater.bag",
+      "bags/newbag/dataset/sequence_08/5_lr_rect_underwater_fixed.bag"
+    ],
+    "algorithm_or_numeric_parameter_changes": false
+  },
+  {
+    "file": "dataset_processing/stereo_to_image.py",
+    "runtime_root_environment_variable": "HARDWAREX_WORK_ROOT",
+    "work_root_relative_paths": [
+      "York-Tank/rosbags/1_reference1.bag",
+      "York-Tank/sequences/1_reference1"
+    ],
+    "algorithm_or_numeric_parameter_changes": false
+  },
+  {
+    "file": "dataset_processing/test_time_gap.py",
+    "runtime_root_environment_variable": "HARDWAREX_WORK_ROOT",
+    "work_root_relative_paths": [
+      "bags/rosbag/dataset/sequence_02/2_lr_rect_underwater.bag",
+      "bags/rosbag/gt/sequence_02/2.bag"
+    ],
+    "algorithm_or_numeric_parameter_changes": false
+  },
+  {
+    "file": "dataset_processing/York-Tank/docs/process_yorktank_bags.py",
+    "runtime_root_environment_variable": "HARDWAREX_WORK_ROOT",
+    "work_root_relative_paths": [
+      "York-Tank"
+    ],
+    "algorithm_or_numeric_parameter_changes": false
+  },
+  {
+    "file": "stereo_calibration/calib_underwater/calibration.py",
+    "runtime_root_environment_variable": "HARDWAREX_WORK_ROOT",
+    "work_root_relative_paths": [
+      "calib_final_v3/left",
+      "calib_final_v3/right"
+    ],
+    "algorithm_or_numeric_parameter_changes": false
+  },
+  {
+    "file": "stereo_calibration/calib_underwater/scan_candidates.py",
+    "runtime_root_environment_variable": "HARDWAREX_WORK_ROOT",
+    "work_root_relative_paths": [
+      "bags/test_09/left",
+      "bags/test_09/right",
+      "calib_candidates"
+    ],
+    "algorithm_or_numeric_parameter_changes": false
+  },
+  {
+    "file": "stereo_calibration/calib_underwater/select_final_30.py",
+    "runtime_root_environment_variable": "HARDWAREX_WORK_ROOT",
+    "work_root_relative_paths": [
+      "calib_candidates/left",
+      "calib_candidates/right",
+      "calib_candidates/scan_log.csv",
+      "calib_final"
+    ],
+    "algorithm_or_numeric_parameter_changes": false
+  },
+  {
+    "file": "york_tank_gt/bag_to_images.py",
+    "runtime_root_environment_variable": "HARDWAREX_WORK_ROOT",
+    "work_root_relative_paths": [
+      "bags/newbag/gt/sequence_08/3",
+      "bags/newbag/gt/sequence_08/3.bag"
+    ],
+    "algorithm_or_numeric_parameter_changes": false
+  },
+  {
+    "file": "slam_evaluation/rtabmap_yorktank/yorktank_rtabmap_full.launch",
+    "runtime_root_environment_variable": "HARDWAREX_WORK_ROOT",
+    "work_root_relative_paths": [
+      "rtabmap_yorktank/results/1_reference1/rtabmap.db"
+    ],
+    "launch_environment_substitution": true,
+    "algorithm_or_numeric_parameter_changes": false
+  }
+]
